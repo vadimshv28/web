@@ -1,0 +1,41 @@
+{
+	"browserSync": {
+	},
+	"dist": {
+		"static": {
+			"min": "./dist/min/",
+			"ext": "./dist/ext/"
+		}
+	},
+	"src": {
+		"dir": "./src/"
+	},
+	"js": {
+		"srcDir": "js/",
+		"srcFile": "main.js",
+		"distDir": "js/",
+		"distFile": "main.js"
+	},
+	"sass": {
+		"srcDir": "sass/",
+		"srcFile": "main.sass",
+		"distDir": "css/",
+		"distFile": "main.css"
+	},
+	"html": {
+		"srcDirPages": "pages/",
+		"srcDirTemplates": "templates/"
+	},
+	"img": {
+		"srcDir": "img/",
+		"distDir": "img/"
+	},
+	"fonts": {
+		"srcDir": "fonts/",
+		"distDir": "fonts/"
+	},
+	"db": {
+		"srcDir": "db/",
+		"distDir": "db/"
+	}
+}

@@ -1,0 +1,38 @@
+@import "_vars"
+
+@import "_mixins/font-face"
+
++font-face("Roboto", "../fonts/RobotoRegular/RobotoRegular")
++font-face("Roboto", "../fonts/RobotoBold/RobotoBold", bold)
++font-face("Roboto", "../fonts/RobotoMedium/RobotoMedium", 500)
++font-face("Roboto", "../fonts/RobotoLight/RobotoLight", 300)
++font-face("Pacifico", "../fonts/PacificoRegular/PacificoRegular")
+
+*
+	margin: 0
+	padding: 0
+	text-decoration: none
+	list-style-type: none
+	box-sizing: border-box
+	// border: 1px solid black
+
+body
+	font-family: $defaul-font
+	font-size: 16px
+	background: #F4F4F4
+	position: relative
+	line-height: 1.75
+	width: 100%
+	opacity: 1
+	overflow-x: hidden
+	padding: 0
+
+.wrapper
+	margin: 0 auto
+
+.container-column
+	display: flex
+	flex-direction: column
+
+.container-line
+	display: flex

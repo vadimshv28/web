@@ -1,0 +1,182 @@
+.home
+	max-width: 1200px
+	margin: 0 auto
+	display: flex
+	flex-direction: row
+	align-items: stretch
+	@media screen and (max-width: 1200px)
+		max-width: 840px
+	@media screen and (max-width: 840px - 138px)
+		max-width: 360px
+		justify-content: center
+
+	.header-widgets
+		height: 70px
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		align-self:center
+		margin: 30px
+
+		.buttons
+			display: flex
+			@media screen and (max-width: 840px - 138px)
+				flex-direction: column
+
+		.wrapper-button
+			position: relative
+			width: 50px
+			height: 50px
+
+		.next-btn, .prev-btn
+			position: absolute
+			margin: 0 10px
+			background: none
+			text-align: center;
+			outline: none;
+			text-decoration: none;
+			border: 0;
+			padding: 0;
+			@media screen and (max-width: 840px - 138px)
+				transform: rotate(90deg)
+
+		.next-btn img
+			width: 100%
+
+		.prev-btn img
+			width: 100%
+
+		.next-btn :hover
+			width: 29px
+
+		.next-btn :active
+			width: 25px
+
+		.prev-btn :hover
+			width: 29px
+
+		.prev-btn :active
+			width: 25px
+
+	.sidebar
+		min-width: 138px
+		@media screen and (max-width: 840px - 138px)
+			display: none
+
+	.main
+		min-width: 1200px - 138px
+		display: flex
+		flex-direction: column
+		justify-content: space-around
+		padding: 30px
+		@media screen and (max-width: 1200px)
+			min-width: 840px - 138px
+		@media screen and (max-width: 840px - 138px)
+			min-width: 320px
+			padding: 0
+
+		.widgets
+			display: flex
+			flex-direction: column
+			margin: 30px 0
+			width: 100%
+			@media screen and (max-width: 840px - 138px)
+				margin: 0
+
+			.wrapper-rendered-widgets
+				position: relative
+				overflow: hidden
+				height: 297px
+				display: flex
+				justify-content: center
+				align-items: center
+				align-self:center
+				@media screen and (max-width: 840px - 138px)
+					height: 450px
+
+			.rendered-widgets
+				display: flex
+				justify-content: flex-start
+				position: absolute
+				width: 165%
+				@media screen and (max-width: 1200px)
+					width: 200%
+				@media screen and (max-width: 840px - 138px)
+					flex-direction: column
+					width: 300px
+					height: 200%
+
+			.wrapper-widget-default
+				margin: 0 2.9% 0 0
+				min-width: 290px
+				max-width: 290px
+				min-height: 210px
+				max-height: 210px
+				transition-property: all
+				transition-duration: 1s
+				@media screen and (max-width: 840px - 138px)
+					margin: 0 0 6% 0
+
+			.wrapper-widget-small
+				min-width: 0 !important
+				max-width: 0 !important
+				min-height: 0 !important
+				max-height: 0 !important
+				margin: 0 !important
+
+			.images
+				display: flex
+				flex-direction: row
+				justify-content: space-around
+				align-items: center
+
+				.img
+					background: black
+					margin: 10px
+					flex-basis: 20%
+
+		.second-row
+			display: flex
+			flex-direction: column
+			width: 100%
+			margin: 30px 0
+			padding: 10px
+
+			.container-second-row
+				width: 100%
+				background: $blue
+				display: flex
+				flex-direction: column
+				justify-content: space-around
+				align-items: center
+				height: 200px
+
+				button
+					width: 40%
+					height: 30%
+					border-radius: 40px
+					font-size: 30px
+					outline: none;
+
+				h3
+					color: white
+
+		.widgets-2
+			display: flex
+			flex-direction: column
+			margin: 30px 0
+
+			.images
+				display: flex
+				flex-direction: row
+				justify-content: space-around
+				align-items: center
+				@media screen and (max-width: 840px - 138px)
+					flex-direction: column
+
+				.img
+					background: $grey
+					margin: 10px
+					width: 200px
+					height: 100px

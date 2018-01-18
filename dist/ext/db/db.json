@@ -1,0 +1,27 @@
+[
+		{
+			"class": "coinmarketcap-currency-widget",
+			"data-currency": "bitcoin",
+			"data-base": "USD"
+		},
+		{
+			"class": "coinmarketcap-currency-widget",
+			"data-currency": "ethereum",
+			"data-base": "USD"
+		},
+		{
+			"class": "coinmarketcap-currency-widget",
+			"data-currency": "ripple",
+			"data-base": "USD"
+		},
+		{
+			"class": "coinmarketcap-currency-widget",
+			"data-currency": "bitcoin-cash",
+			"data-base": "USD"
+		},
+		{
+			"class": "coinmarketcap-currency-widget",
+			"data-currency": "cardano",
+			"data-base": "USD"
+		}
+]

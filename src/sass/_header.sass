@@ -1,0 +1,61 @@
+.header
+	background: $blue
+
+	.header-container
+		margin: 0 auto
+		max-width: 1200px
+		display: flex
+		color: white
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		padding: 10px
+		@media screen and (max-width: 1200px)
+			max-width: 840px
+		@media screen and (max-width: 840px - 138px)
+			max-width: 360px
+
+		.logo
+			padding: 0 1%
+		.dogs
+			@media screen and (max-width: 840px - 138px)
+				display: none
+		.find
+			flex-basis: 40%
+			border-radius: 10px
+			outline: none;
+			padding: 5px
+			@media screen and (max-width: 840px - 138px)
+				display: none
+
+		.profile
+			@media screen and (max-width: 840px - 138px)
+				display: none
+
+		.nav
+			display: none
+			@media screen and (max-width: 840px - 138px)
+				display: block
+
+.nav-close
+	position: fixed
+	width: 100%
+	height: 0
+	background: #2E4099
+	transition-property: height
+	transition-duration: 1s
+	z-index: 1
+
+	.nav-list-non-visible
+		display: none
+		color: white
+		padding: 10px
+
+	.nav-list-visible
+		display: block
+
+.nav-open
+	height: 100vh
+	z-index: 1;
+	transition-property: height
+	transition-duration: 1s
